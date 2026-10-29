@@ -1,138 +1,367 @@
- [Reza Kandias](#beranda)
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nadia Putri Rahma – Staff Admin</title>
+<meta name="description" content="Portofolio Nadia Putri Rahma, Staff Admin berpengalaman dalam pengarsipan, korespondensi, dan administrasi operasional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F7FA; --surface:#FFFFFF; --ink:#16233B; --muted:#55627A; --line:#DDE3EC;
+  --brand:#1F4FD8; --brand-ink:#FFFFFF; --mark:#FFE066; --ok:#1A8F5A;
+  --head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --body:"Plus Jakarta Sans","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1726; --surface:#17223A; --ink:#EAF0FA; --muted:#A3B0C7; --line:#2A3858;
+    --brand:#7FA2FF; --brand-ink:#0F1726; --mark:#E8C93A; --ok:#4FD08F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1726; --surface:#17223A; --ink:#EAF0FA; --muted:#A3B0C7; --line:#2A3858;
+  --brand:#7FA2FF; --brand-ink:#0F1726; --mark:#E8C93A; --ok:#4FD08F; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:var(--head);line-height:1.12;margin:0;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
-- [Tentang](#tentang)
-- [Keahlian](#keahlian)
-- [Pengalaman](#pengalaman)
-- [Hasil kerja](#proyek)
-- [Kontak](#kontak)
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font:700 1.1rem var(--head);text-decoration:none}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem;padding:6px 2px;border-bottom:2px solid transparent}
+.nav ul a:hover,.nav ul a.on{color:var(--ink);border-color:var(--brand)}
+.tools{display:flex;gap:8px;align-items:center}
+.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:40px;height:40px;border-radius:10px;cursor:pointer;font-size:1.05rem}
+.menu-btn{display:none}
+@media (max-width:760px){
+  .menu-btn{display:inline-block}
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 22px 14px}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:12px 0}
+}
 
-# Reza Kandias
+.hero{padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.6vw,4rem);font-weight:800}
+.hero .role{margin-top:14px;font:600 1.15rem var(--head);color:var(--brand)}
+.hero .lead{margin-top:18px;color:var(--muted);max-width:52ch;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;font-family:var(--body);font-size:1rem}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-1px)}
+.agenda{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 18px 40px -24px rgba(22,35,59,.35)}
+.agenda h2{font-size:1.2rem}
+.agenda small{color:var(--muted);display:block;margin-top:2px}
+.agenda ul{list-style:none;margin:18px 0 0;padding:0}
+.agenda li+li{margin-top:6px}
+.agenda label{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:10px;cursor:pointer}
+.agenda label:hover{background:var(--bg)}
+.agenda input{appearance:none;width:22px;height:22px;flex:none;margin:2px 0 0;border:2px solid var(--muted);border-radius:6px;display:grid;place-content:center;cursor:pointer}
+.agenda input:checked{background:var(--ok);border-color:var(--ok)}
+.agenda input:checked::after{content:"✓";color:#fff;font-size:.8rem;font-weight:700}
+.agenda input:checked+span{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--ok)}
+.bar{height:8px;background:var(--line);border-radius:99px;margin-top:18px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--ok);border-radius:99px;transition:width .35s}
+.status{margin-top:10px;font-weight:600;font-size:.92rem}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero{padding-top:40px}}
 
-Staff Admin · Administrasi & Operasional Kantor
+section{padding:68px 0}
+.sec-head{margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.3rem);font-weight:700;display:inline;background:linear-gradient(transparent 62%,var(--mark) 62% 92%,transparent 92%);padding:0 4px;margin-left:-4px}
+.sec-head p{color:var(--muted);margin-top:12px;max-width:60ch}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
 
-Saya memastikan dokumen tertata, jadwal berjalan, dan tim bisa fokus bekerja. Enam tahun mengelola arsip, korespondensi, dan laporan di perusahaan jasa dan distribusi.
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:44px}
+.about p+p{margin-top:14px}
+.about p{max-width:62ch}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+.fact{border-left:4px solid var(--brand);padding:6px 0 6px 14px}
+.fact b{display:block;font:800 2rem var(--head)}
+.fact span{color:var(--muted);font-size:.9rem}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
 
-[Hubungi saya](#kontak) [Lihat pengalaman](#pengalaman)
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.skill-group{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg)}
+.skill-group h3{font-size:1.15rem;margin-bottom:16px}
+.skill{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;border-top:1px dashed var(--line)}
+.skill:first-of-type{border-top:0}
+.dots{display:flex;gap:5px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.dots i.f{background:var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:99px;font-weight:500;font-size:.92rem}
 
-## Agenda kerja hari ini
+.timeline{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--line)}
+.job{position:relative;padding-bottom:36px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-35px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+.job time{color:var(--muted);font-size:.9rem;font-weight:500}
+.job h3{font-size:1.25rem;margin:4px 0 2px}
+.job .co{color:var(--brand);font-weight:600}
+.job ul{margin:12px 0 0;padding-left:18px;color:var(--muted);max-width:68ch}
+.job li+li{margin-top:6px}
 
-Centang untuk melihat cara saya bekerja
+.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.work{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--surface)}
+.work h3{font-size:1.1rem;margin-bottom:8px}
+.work p{color:var(--muted);font-size:.95rem}
+.work .res{margin-top:14px;font-weight:600;color:var(--ok);font-size:.92rem}
 
-- [ ] Rekap absensi & lembur tim
-- [ ] Balas surat masuk dan disposisi
-- [ ] Arsipkan kontrak dan faktur bulan ini
-- [ ] Jadwalkan rapat mingguan direksi
-- [ ] Kirim laporan stok ke manajer
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:44px}
+.contact ul{list-style:none;margin:22px 0 0;padding:0}
+.contact li{padding:12px 0;border-top:1px solid var(--line)}
+.contact li span{display:block;color:var(--muted);font-size:.85rem}
+.contact a{font-weight:600;text-decoration:none}
+.contact a:hover{text-decoration:underline}
+form{display:grid;gap:14px;background:var(--surface);border:1px solid var(--line);padding:24px;border-radius:16px}
+label.f{display:grid;gap:6px;font-weight:600;font-size:.92rem}
+input.t,textarea{font:inherit;font-weight:400;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+.msg{font-weight:600;font-size:.92rem;min-height:1.4em}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
 
-0 dari 5 selesai
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#beranda">Reza Kandias</a>
+    <ul id="menu">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#proyek">Hasil kerja</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="tools">
+      <button class="icon-btn" id="theme" aria-label="Ganti tema terang atau gelap">◐</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </div>
+</header>
 
-## Tentang saya
+<main>
+<div class="hero" id="beranda">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Nadia Putri Rahma</h1>
+      <p class="role">Staff Admin · Administrasi &amp; Operasional Kantor</p>
+      <p class="lead">Saya memastikan dokumen tertata, jadwal berjalan, dan tim bisa fokus bekerja. Enam tahun mengelola arsip, korespondensi, dan laporan di perusahaan jasa dan distribusi.</p>
+      <div class="cta">
+        <a class="btn primary" href="#kontak">Hubungi saya</a>
+        <a class="btn ghost" href="#pengalaman">Lihat pengalaman</a>
+      </div>
+    </div>
+    <aside class="agenda" aria-labelledby="agTitle">
+      <h2 id="agTitle">Agenda kerja hari ini</h2>
+      <small>Centang untuk melihat cara saya bekerja</small>
+      <ul id="tasks">
+        <li><label><input type="checkbox"><span>Rekap absensi &amp; lembur tim</span></label></li>
+        <li><label><input type="checkbox"><span>Balas surat masuk dan disposisi</span></label></li>
+        <li><label><input type="checkbox"><span>Arsipkan kontrak dan faktur bulan ini</span></label></li>
+        <li><label><input type="checkbox"><span>Jadwalkan rapat mingguan direksi</span></label></li>
+        <li><label><input type="checkbox"><span>Kirim laporan stok ke manajer</span></label></li>
+      </ul>
+      <div class="bar" role="progressbar" aria-label="Progres agenda" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="fill"></i></div>
+      <p class="status" id="status" aria-live="polite">0 dari 5 selesai</p>
+    </aside>
+  </div>
+</div>
 
-Saya lulusan D3 Administrasi Perkantoran dengan pengalaman di bidang pengelolaan dokumen, korespondensi bisnis, dan koordinasi antar divisi. Saya terbiasa bekerja dengan tenggat ketat tanpa mengorbankan ketelitian.
+<section id="tentang" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Tentang saya</h2></div>
+    <div class="about">
+      <div>
+        <p>Saya lulusan D3 Administrasi Perkantoran dengan pengalaman di bidang pengelolaan dokumen, korespondensi bisnis, dan koordinasi antar divisi. Saya terbiasa bekerja dengan tenggat ketat tanpa mengorbankan ketelitian.</p>
+        <p>Saya menyukai sistem kerja yang rapi: penamaan berkas yang konsisten, template yang bisa dipakai ulang, dan checklist yang jelas. Hasilnya, tim lebih cepat menemukan dokumen dan lebih sedikit pekerjaan yang terulang.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b data-n="6">0</b><span>tahun pengalaman</span></div>
+        <div class="fact"><b data-n="1200">0</b><span>dokumen digitalisasi</span></div>
+        <div class="fact"><b data-n="40">0</b><span>karyawan didukung</span></div>
+        <div class="fact"><b data-n="98">0</b><span>% laporan tepat waktu</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-Saya menyukai sistem kerja yang rapi: penamaan berkas yang konsisten, template yang bisa dipakai ulang, dan checklist yang jelas. Hasilnya, tim lebih cepat menemukan dokumen dan lebih sedikit pekerjaan yang terulang.
+<section id="keahlian">
+  <div class="wrap">
+    <div class="sec-head"><h2>Keahlian</h2><p>Kemampuan yang saya pakai setiap hari di kantor.</p></div>
+    <div class="skills">
+      <div class="skill-group">
+        <h3>Administrasi</h3>
+        <div class="skill">Pengarsipan dokumen <span class="dots" data-l="5"></span></div>
+        <div class="skill">Korespondensi &amp; surat resmi <span class="dots" data-l="5"></span></div>
+        <div class="skill">Notulen rapat <span class="dots" data-l="4"></span></div>
+        <div class="skill">Penjadwalan &amp; perjalanan dinas <span class="dots" data-l="5"></span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Aplikasi kantor</h3>
+        <div class="skill">Microsoft Excel <span class="dots" data-l="5"></span></div>
+        <div class="skill">Microsoft Word <span class="dots" data-l="5"></span></div>
+        <div class="skill">PowerPoint <span class="dots" data-l="4"></span></div>
+        <div class="skill">Google Workspace <span class="dots" data-l="5"></span></div>
+      </div>
+      <div class="skill-group">
+        <h3>Kerja sama tim</h3>
+        <div class="skill">Komunikasi dengan klien <span class="dots" data-l="4"></span></div>
+        <div class="skill">Manajemen waktu <span class="dots" data-l="5"></span></div>
+        <div class="skill">Ketelitian data <span class="dots" data-l="5"></span></div>
+        <div class="skill">Menjaga kerahasiaan <span class="dots" data-l="5"></span></div>
+      </div>
+    </div>
+    <div class="chips" aria-label="Alat yang dikuasai">
+      <span class="chip">Excel: VLOOKUP &amp; Pivot</span><span class="chip">Google Drive</span><span class="chip">Zoom &amp; Meet</span><span class="chip">Accurate (dasar)</span><span class="chip">Trello</span><span class="chip">Ketik 70 WPM</span>
+    </div>
+  </div>
+</section>
 
-**0**tahun pengalaman
+<section id="pengalaman" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>Pengalaman kerja</h2></div>
+    <ol class="timeline">
+      <li class="job">
+        <time>2023 – sekarang</time>
+        <h3>Staff Admin Senior</h3>
+        <div class="co">PT Maju Bersama Logistik, Jakarta</div>
+        <ul>
+          <li>Mengelola surat masuk dan keluar, rata-rata 60 dokumen per minggu.</li>
+          <li>Menyusun laporan operasional bulanan untuk manajer dan direksi.</li>
+          <li>Membuat sistem folder digital yang memangkas waktu pencarian dokumen.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <time>2021 – 2023</time>
+        <h3>Staff Administrasi &amp; HR</h3>
+        <div class="co">CV Sentosa Abadi, Tangerang</div>
+        <ul>
+          <li>Merekap absensi, cuti, dan lembur 40 karyawan setiap bulan.</li>
+          <li>Menyiapkan kontrak kerja dan berkas onboarding karyawan baru.</li>
+          <li>Mengatur jadwal rapat dan perjalanan dinas pimpinan.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <time>2019 – 2021</time>
+        <h3>Admin Penjualan</h3>
+        <div class="co">PT Nusantara Mandiri, Jakarta</div>
+        <ul>
+          <li>Membuat penawaran, faktur, dan surat jalan untuk tim sales.</li>
+          <li>Memantau stok dan pesanan menggunakan Excel.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
 
-**0**dokumen digitalisasi
+<section id="proyek">
+  <div class="wrap">
+    <div class="sec-head"><h2>Hasil kerja</h2><p>Perbaikan nyata yang saya jalankan di tempat kerja.</p></div>
+    <div class="works">
+      <article class="work"><h3>Digitalisasi arsip</h3><p>Memindai dan mengindeks arsip kontrak lama ke folder cloud dengan aturan penamaan seragam.</p><p class="res">1.200 dokumen tertata</p></article>
+      <article class="work"><h3>Template laporan bulanan</h3><p>Menyusun template Excel dengan rumus otomatis untuk rekap absensi dan stok.</p><p class="res">Waktu penyusunan turun 50%</p></article>
+      <article class="work"><h3>Kalender rapat terpusat</h3><p>Membuat kalender bersama dan pengingat otomatis untuk rapat dan tenggat.</p><p class="res">Jadwal bentrok hampir nol</p></article>
+    </div>
+  </div>
+</section>
 
-**0**karyawan didukung
+<section id="kontak" class="alt">
+  <div class="wrap contact">
+    <div>
+      <div class="sec-head" style="margin-bottom:0"><h2>Kontak</h2><p>Sedang membuka peluang baru? Kirim pesan, saya balas dalam 1 hari kerja.</p></div>
+      <ul>
+        <li><span>Email</span><a href="mailto:nadia.putri@email.com">nadia.putri@email.com</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/6281234567890">+62 812-3456-7890</a></li>
+        <li><span>Lokasi</span>Jakarta, Indonesia</li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/">linkedin.com/in/nadiaputri</a></li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <label class="f">Nama<input class="t" id="n" autocomplete="name" required></label>
+      <label class="f">Email<input class="t" id="e" type="email" autocomplete="email" required></label>
+      <label class="f">Pesan<textarea id="m" required></textarea></label>
+      <button class="btn primary" type="submit">Kirim pesan</button>
+      <p class="msg" id="msg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
 
-**0**% laporan tepat waktu
+<footer><div class="wrap">© <span id="yr"></span> Nadia Putri Rahma. Semua hak dilindungi.</div></footer>
 
-## Keahlian
+<script>
+// Agenda interaktif
+const boxes=[...document.querySelectorAll('#tasks input')];
+const fill=document.getElementById('fill'),status=document.getElementById('status'),bar=document.querySelector('.bar');
+function upd(){
+  const d=boxes.filter(b=>b.checked).length,p=Math.round(d/boxes.length*100);
+  fill.style.width=p+'%';bar.setAttribute('aria-valuenow',p);
+  status.textContent=d===boxes.length?'Semua beres, siap lanjut ke tugas berikutnya!':d+' dari '+boxes.length+' selesai';
+}
+boxes.forEach(b=>b.addEventListener('change',upd));
 
-Kemampuan yang saya pakai setiap hari di kantor.
+// Titik level keahlian
+document.querySelectorAll('.dots').forEach(el=>{
+  const l=+el.dataset.l;el.setAttribute('role','img');el.setAttribute('aria-label','Level '+l+' dari 5');
+  for(let i=1;i<=5;i++){const s=document.createElement('i');if(i<=l)s.className='f';el.appendChild(s)}
+});
 
-### Administrasi
+// Hitung angka statistik
+const nums=document.querySelectorAll('[data-n]');
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function count(el){
+  const t=+el.dataset.n;if(reduce){el.textContent=t.toLocaleString('id-ID');return}
+  const s=performance.now(),D=1100;
+  (function f(n){const k=Math.min((n-s)/D,1);el.textContent=Math.round(t*(1-Math.pow(1-k,3))).toLocaleString('id-ID');if(k<1)requestAnimationFrame(f)})(s);
+}
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){count(x.target);io.unobserve(x.target)}}),{threshold:.6});
+  nums.forEach(n=>io.observe(n));
+}else nums.forEach(count);
 
-Pengarsipan dokumen
+// Menu mobile & tema
+const menu=document.getElementById('menu'),mb=document.getElementById('menuBtn');
+mb.addEventListener('click',()=>{const o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
+document.getElementById('theme').addEventListener('click',()=>{
+  const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  r.dataset.theme=dark?'light':'dark';
+});
 
-Korespondensi & surat resmi
+// Penanda menu aktif
+const links=[...menu.querySelectorAll('a')];
+if('IntersectionObserver' in window){
+  const so=new IntersectionObserver(es=>es.forEach(x=>{
+    if(x.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id));
+  }),{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
+}
 
-Notulen rapat
-
-Penjadwalan & perjalanan dinas
-
-### Aplikasi kantor
-
-Microsoft Excel
-
-Microsoft Word
-
-PowerPoint
-
-Google Workspace
-
-### Kerja sama tim
-
-Komunikasi dengan klien
-
-Manajemen waktu
-
-Ketelitian data
-
-Menjaga kerahasiaan
-
-Excel: VLOOKUP & PivotGoogle DriveZoom & MeetAccurate (dasar)TrelloKetik 70 WPM
-
-## Pengalaman kerja
-
-1. 2023 – sekarang
-
-   ### Staff Admin Senior
-
-   PT Maju Bersama Logistik, Jakarta
-   - Mengelola surat masuk dan keluar, rata-rata 60 dokumen per minggu.
-   - Menyusun laporan operasional bulanan untuk manajer dan direksi.
-   - Membuat sistem folder digital yang memangkas waktu pencarian dokumen.
-2. 2021 – 2023
-
-   ### Staff Administrasi & HR
-
-   CV Sentosa Abadi, Tangerang
-   - Merekap absensi, cuti, dan lembur 40 karyawan setiap bulan.
-   - Menyiapkan kontrak kerja dan berkas onboarding karyawan baru.
-   - Mengatur jadwal rapat dan perjalanan dinas pimpinan.
-3. 2019 – 2021
-
-   ### Admin Penjualan
-
-   PT Nusantara Mandiri, Jakarta
-   - Membuat penawaran, faktur, dan surat jalan untuk tim sales.
-   - Memantau stok dan pesanan menggunakan Excel.
-
-## Hasil kerja
-
-Perbaikan nyata yang saya jalankan di tempat kerja.
-
-### Digitalisasi arsip
-
-Memindai dan mengindeks arsip kontrak lama ke folder cloud dengan aturan penamaan seragam.
-
-1.200 dokumen tertata
-
-### Template laporan bulanan
-
-Menyusun template Excel dengan rumus otomatis untuk rekap absensi dan stok.
-
-Waktu penyusunan turun 50%
-
-### Kalender rapat terpusat
-
-Membuat kalender bersama dan pengingat otomatis untuk rapat dan tenggat.
-
-Jadwal bentrok hampir nol
-
-## Kontak
-
-Sedang membuka peluang baru? Kirim pesan, saya balas dalam 1 hari kerja.
-
-- Email[nadia.putri@email.com](mailto:nadia.putri@email.com)
-- WhatsApp[+62 812-3456-7890](https://wa.me/6281234567890)
-- LokasiJakarta, Indonesia
-- LinkedIn[linkedin.com/in/nadiaputri](https://www.linkedin.com/)
-
-Nama Email Pesan
-
-Reza Kandias. Semua hak dilindungi.
+// Formulir kontak (membuka aplikasi email)
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('n').value.trim(),em=document.getElementById('e').value.trim(),m=document.getElementById('m').value.trim(),msg=document.getElementById('msg');
+  if(!n||!/^\S+@\S+\.\S+$/.test(em)||!m){msg.textContent='Lengkapi nama, email yang valid, dan pesan.';msg.style.color='#C0392B';return}
+  msg.style.color='var(--ok)';msg.textContent='Membuka aplikasi email Anda…';
+  location.href='mailto:nadia.putri@email.com?subject='+encodeURIComponent('Pesan dari '+n)+'&body='+encodeURIComponent(m+'\n\n'+n+' ('+em+')');
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
